@@ -46,37 +46,12 @@ const createRestoDetailTemplate = (resto) => `
   </div>
 `;
 
-// const createSkeletonMovieTemplate = (count) => {
-//   let template = '';
-
-//   for (let i = 0; i < count; i += 1) {
-//     template += `
-
-//       <div class="resto-item">
-//       <div class="resto-item__header skeleton">
-//         <img class="resto-item__header__poster" width="100%" height="350px" alt="skeleton"
-//             src="https://cdn.pixabay.com/photo/2015/09/16/08/55/online-942406_1280.jpg">
-//         <div class="resto-item__header__rating skeleton">Bandung
-//         </div>
-//       </div>
-//       <div class="resto-item__content">
-//       <p class="list_item_rating skeleton">Rating : ⭐️ <span class="list_item_rating_value skeleton" tabindex="0">5</span>
-//       </p>
-//         <h2 class="resto__title skeleton">Lorem ipsum dolor sit.<a href="/#/detail/</a></h2>
-//         <p class="skeleton">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias aspernatur, assumenda aut consectetur consequuntur debitis deleniti dicta dolorem dolorum eos exercitationem labore laboriosam magni nihil, nobis obcaecati optio perspiciatis placeat qui recusandae saepe sapiente sequi totam ullam ut.</p>
-//       </div>
-//     </div>
-//     `;
-//   }
-//   return template;
-// };
-
 const createRestoItemTemplate = (resto) => `
   <div tabindex="0" class="resto-item">
     <a href="/#/detail/${resto.id}">
       <div class="resto-item__header skeleton">
       <img tabindex="0" class="lazyload resto-item__header__poster" alt="${resto.name}"
-          src="${CONFIG.BASE_IMAGE_URL('small') + resto.pictureId}">
+      data-src="${CONFIG.BASE_IMAGE_URL('small') + resto.pictureId}">
       <div tabindex="0" class="resto-item__header__rating skeleton">${resto.city}
       </div>
       </div>

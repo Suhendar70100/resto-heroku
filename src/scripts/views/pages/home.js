@@ -25,11 +25,11 @@ const Home = {
     restos.forEach((resto) => {
       restoContainer.innerHTML += createRestoItemTemplate(resto);
     });
-    const allSkeleton = document.querySelectorAll(".skeleton");
+    const allSkeleton = document.querySelectorAll('.skeleton');
     setTimeout(() => {
-      allSkeleton.forEach(item => {
-        item.classList.remove('skeleton')
-      })
+      allSkeleton.forEach((item) => {
+        item.classList.remove('skeleton');
+      });
     }, 2000);
   },
 };

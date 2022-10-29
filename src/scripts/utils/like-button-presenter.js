@@ -1,8 +1,8 @@
+import swal from 'sweetalert2';
 import {
   createLikeRestoButtonTemplate,
   createUnlikeRestoButtonTemplate,
 } from '../views/templates/template-creator';
-import swal from 'sweetalert2';
 
 const LikeButtonInitiator = {
   async init({
@@ -39,7 +39,7 @@ const LikeButtonInitiator = {
 
     const likeButton = document.querySelector('#likeButton');
     likeButton.addEventListener('click', async () => {
-      // eslint-disable-next-line no-undef
+      // eslint-disable-next-line no-undef, new-cap
       new swal({
         title: 'Notification',
         text: 'Successfully Added To Favorite Menu',
@@ -62,7 +62,7 @@ const LikeButtonInitiator = {
 
     const likeButton = document.querySelector('#likeButton');
     likeButton.addEventListener('click', async () => {
-      // eslint-disable-next-line no-undef
+      // eslint-disable-next-line no-undef, new-cap
       new swal({
         title: 'Notification',
         text: 'successfully Remove from favorite menu',

@@ -1,5 +1,5 @@
 const {
-  setHeadlessWhen
+  setHeadlessWhen,
 } = require('@codeceptjs/configure');
 
 // turn on headless mode when running with HEADLESS=true environment variable
@@ -13,7 +13,7 @@ exports.config = {
     Puppeteer: {
       url: 'http://localhost:9000',
       show: true,
-      browser: 'chromium', //baru
+      browser: 'chromium', // baru
       windowSize: '1280x720',
     },
   },
@@ -24,7 +24,7 @@ exports.config = {
   mocha: {},
   name: 'resto-catalogue',
   plugins: {
-    pauseOnFail: {}, //baru
+    pauseOnFail: {}, // baru
     retryFailedStep: {
       enabled: true,
     },
@@ -36,8 +36,6 @@ exports.config = {
     },
   },
 };
-
-
 
 // ===============
 // const { setHeadlessWhen } = require('@codeceptjs/configure');

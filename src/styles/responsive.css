@@ -47,11 +47,55 @@
     }
 }
 
-@media screen and (max-width: 300px) {
+/* @media (min-width: 400px) {
+    .hero {
+        display: flex;
+        align-items: center;
+        min-height: 380px;
+        width: 100%;
+        text-align: center;
+        background-image: url("../hero/hero-image_4-small.jpg");
+        background-position: center;
+        background-color: green;
+        border: 15px;
+        background-repeat: no-repeat;
+
+    }
+} */
+/* @media (max-width: 300px) {
     .hero {
         background-image: url("../hero/hero-image_4-small.jpg");
+
     }
 }
+
+@media (max-width: 400px) {
+    .hero {
+        background-image: url("../hero/hero-image_4-small.jpg");
+
+    }
+}
+
+@media (max-width: 500px) {
+    .hero {
+        background-image: url("../hero/hero-image_4-small.jpg");
+
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        background-image: url("../hero/hero-image_4-small.jpg");
+
+    }
+}
+
+@media (max-width: 700px) {
+    .hero {
+        background-image: url("../hero/hero-image_4-small.jpg");
+
+    }
+} */
 
 @media screen and (min-width: 800px) {
     .app-bar .app-bar__brand h1 {

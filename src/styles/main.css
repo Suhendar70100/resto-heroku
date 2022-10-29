@@ -78,10 +78,10 @@ body {
     display: inline-block;
     text-decoration: none;
     color: white;
-    padding: 8px;
+    padding: 10px;
     margin-bottom: 5px;
     width: 100%;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 a:is(:link, :active, :visited).active {
@@ -378,5 +378,22 @@ empty-favorite {
 
     100% {
         background-position: 100% 0;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .hero {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+        min-height: 380px;
+        background: #000000;
+        background-image: url("../hero/hero-image_4-small.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+
     }
 }

@@ -4,8 +4,8 @@ menu.addEventListener('click', (e) => {
   if (targetMenu.classList.contains('menu__link')) {
     const menuLinkActive = document.querySelector('ul li a.active');
     if (menuLinkActive !== null && targetMenu.getAttribute('href') !== menuLinkActive.getAttribute(
-        'href',
-      )) {
+      'href',
+    )) {
       menuLinkActive.classList.remove('active');
     }
     targetMenu.classList.add('active');

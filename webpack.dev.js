@@ -3,7 +3,7 @@ const {
   merge,
 } = require('webpack-merge');
 const {
-  CleanWebpackPlugin
+  CleanWebpackPlugin,
 } = require('clean-webpack-plugin');
 const common = require('./webpack.common');
 
